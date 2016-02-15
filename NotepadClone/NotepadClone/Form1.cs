@@ -14,18 +14,24 @@ namespace NotepadClone
     {
         public Form1()
         {
-            InitializeComponent();
-         
+            InitializeComponent(); 
             
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button_test(object sender, EventArgs e)
         {
             Console.WriteLine("Temp");
         }
 
+        /// <summary>
+        /// Creates a Fresh textbox
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void button_file_new_Click(object sender, EventArgs e)
         {
+            TextBox_input.Text = "";
+
 
         }
 
@@ -43,5 +49,7 @@ namespace NotepadClone
         {
 
         }
+
+       
     }
 }
