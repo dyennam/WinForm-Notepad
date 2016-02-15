@@ -21,6 +21,8 @@ namespace NotepadClone
         private void button_test(object sender, EventArgs e)
         {
             Console.WriteLine("Temp");
+
+
         }
 
         /// <summary>
@@ -31,12 +33,14 @@ namespace NotepadClone
         private void button_file_new_Click(object sender, EventArgs e)
         {
             TextBox_input.Text = "";
-
-
+            
         }
 
         private void button_file_open_Click(object sender, EventArgs e)
         {
+            
+            openFileDialog1.Filter = "Text File|*.txt";
+            openFileDialog1.Filter = "Rich Text File|*.rtf";                        
 
         }
 
@@ -62,6 +66,34 @@ namespace NotepadClone
 
         }
 
-       
+        private void button_edit_undo_Click(object sender, EventArgs e)
+        {
+            TextBox_input.Undo();
+            textBox_execution.Text = "Undo Action Executed";
+
+            /*
+            var temp = TextBox_input.RedoActionName;
+            Console.WriteLine("action: " + temp);
+
+            var temp2 = TextBox_input.CanRedo;
+            Console.WriteLine("Can redo: " + temp2);
+            */
+
+        }
+
+        private void button_edit_redo_Click(object sender, EventArgs e)
+        {
+            TextBox_input.Redo();
+            textBox_execution.Text = "Redo Action Executed";
+
+            /*
+            var temp = TextBox_input.RedoActionName;
+            Console.WriteLine("action: " + temp);
+
+            var temp2 = TextBox_input.CanRedo;
+            Console.WriteLine("Can redo: " + temp2);
+            */ 
+
+        }
     }
 }

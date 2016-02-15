@@ -48,6 +48,7 @@
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.textBox_execution = new System.Windows.Forms.TextBox();
+            this.button_edit_redo = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             this.SuspendLayout();
@@ -130,6 +131,7 @@
             // 
             this.editToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.button_edit_undo,
+            this.button_edit_redo,
             this.button_edit_cut,
             this.button_edit_copy,
             this.button_edit_paste});
@@ -141,28 +143,29 @@
             // 
             this.button_edit_undo.Name = "button_edit_undo";
             this.button_edit_undo.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z)));
-            this.button_edit_undo.Size = new System.Drawing.Size(144, 22);
+            this.button_edit_undo.Size = new System.Drawing.Size(152, 22);
             this.button_edit_undo.Text = "Undo";
+            this.button_edit_undo.Click += new System.EventHandler(this.button_edit_undo_Click);
             // 
             // button_edit_cut
             // 
             this.button_edit_cut.Name = "button_edit_cut";
             this.button_edit_cut.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
-            this.button_edit_cut.Size = new System.Drawing.Size(144, 22);
+            this.button_edit_cut.Size = new System.Drawing.Size(152, 22);
             this.button_edit_cut.Text = "Cut";
             // 
             // button_edit_copy
             // 
             this.button_edit_copy.Name = "button_edit_copy";
             this.button_edit_copy.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
-            this.button_edit_copy.Size = new System.Drawing.Size(144, 22);
+            this.button_edit_copy.Size = new System.Drawing.Size(152, 22);
             this.button_edit_copy.Text = "Copy";
             // 
             // button_edit_paste
             // 
             this.button_edit_paste.Name = "button_edit_paste";
             this.button_edit_paste.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
-            this.button_edit_paste.Size = new System.Drawing.Size(144, 22);
+            this.button_edit_paste.Size = new System.Drawing.Size(152, 22);
             this.button_edit_paste.Text = "Paste";
             // 
             // formatToolStripMenuItem
@@ -202,6 +205,14 @@
             this.textBox_execution.ReadOnly = true;
             this.textBox_execution.Size = new System.Drawing.Size(243, 20);
             this.textBox_execution.TabIndex = 3;
+            // 
+            // button_edit_redo
+            // 
+            this.button_edit_redo.Name = "button_edit_redo";
+            this.button_edit_redo.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Y)));
+            this.button_edit_redo.Size = new System.Drawing.Size(152, 22);
+            this.button_edit_redo.Text = "Redo";
+            this.button_edit_redo.Click += new System.EventHandler(this.button_edit_redo_Click);
             // 
             // Form1
             // 
@@ -245,6 +256,7 @@
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.TextBox textBox_execution;
+        private System.Windows.Forms.ToolStripMenuItem button_edit_redo;
     }
 }
 
