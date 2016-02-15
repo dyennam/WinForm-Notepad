@@ -47,6 +47,18 @@ namespace NotepadClone
 
         private void button_file_exit_Click(object sender, EventArgs e)
         {
+            DialogResult exitResult = 
+                MessageBox.Show("Do you really want to exit", "Exit", MessageBoxButtons.YesNo);
+
+            if (exitResult == DialogResult.Yes)
+            {
+                Environment.Exit(0);
+            }
+
+            else
+            {
+             //   
+            }
 
         }
 
