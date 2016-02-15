@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6C6EFD72-A833-4650-86A8-A6FB96728355}</ProjectGuid>
+    <ProjectGuid>{99CA7A1C-2C26-4FA1-9265-89D2AAD48134}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>NotepadClone</RootNamespace>
