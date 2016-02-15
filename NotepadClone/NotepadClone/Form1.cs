@@ -23,5 +23,25 @@ namespace NotepadClone
         {
             Console.WriteLine("Temp");
         }
+
+        private void button_file_new_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button_file_open_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button_file_save_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button_file_exit_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
