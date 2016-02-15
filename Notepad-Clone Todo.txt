@@ -1,0 +1,47 @@
+Notepad-Clone Todo
+
+Website: http://www.simplygoodcode.com/2012/04/notepad-clone-in-net-winforms/
+
+	File
+		New
+		Open
+		Save
+		Save As
+		Page Setup
+		Header & Footer (you can use variables to include filename, date, and other information)
+		Print
+		Exit
+
+	Edit
+		Undo
+		Cut
+		Copy
+		Paste
+		Delete
+		Find
+			Find next
+			Direction up/down
+			Match case
+
+		Find Next		
+		Replace
+		Find next
+			Replace
+			Replace all
+			Match case
+
+		Go To (a specific line number)
+		Select All
+		Time/Date (inserts the date and time e.g 9:18 PM 2/11/2014)
+		insert (e.g 9:18 PM 2/11/2014)
+
+	Format
+		Word Wrap
+		Font
+
+	View
+		Status bar (displays the line number and column number)
+		
+	Help
+		View Help (you will have to provide your own documentation)
+		About Notepad Clone
